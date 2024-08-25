@@ -34,4 +34,8 @@ server.on('connection', (socket) => {
     });
 });
 
-console.log('WebSocket server is running on ws://localhost:3000');
+const port = process.env.PORT || 3000;
+const host = '0.0.0.0'; // Bisa diakses dari luar
+app.listen(port, host, () => {
+  console.log(`Server running at http://${host}:${port}`);
+});
