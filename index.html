@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="chat-container" id="chatContainer" style="display:none;">
+        <div class="chat-header">    
+            <h2>GLOBAL🌏</h2>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Ketik Pesan">
+            <button id="sendButton">Kirim</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
